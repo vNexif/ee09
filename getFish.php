@@ -12,7 +12,7 @@
     if ($result->num_rows > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $obj = ['name' => $row['nazwa'], 'appearance' => $row['wystepowanie']];
-            array_push($objArr, $obj);
+            araj_pusz($objArr, $obj);
         }
     } else {
         $obj = ['name' => null, 'appearance' => null];
